@@ -1,0 +1,70 @@
+.container .section {
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+
+p {
+  margin: 10px;
+}
+
+.container {
+  width: 100%;
+  border-radius: 3px;
+  height: 80px;
+}
+.container .section {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.container .collapsible {
+  border-bottom: none;
+}
+
+.container .collapsible__inner {
+  display: flex;
+  padding: 40px 30px 50px;
+  background-color: #fff;
+}
+
+.container .collapsible__inner .col {
+  width: 21%;
+  margin-right: 30px;
+}
+
+.container .collapsible__inner .col-w {
+  flex-grow: 1;
+}
+
+button {
+  display: block;
+  --webkit-appearance: none;
+  font-size: 18px;
+  border: none;
+  border-radius: 3px;
+  background: #2196f3;
+  color: white;
+  margin: 15px auto;
+  padding: 15px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-out;
+}
+button:hover {
+  box-shadow: 0px 0px 15px lightgrey;
+}
+button:active {
+  box-shadow: 0px 0px 10px lightgrey;
+}
+button:focus {
+  outline: none;
+}
