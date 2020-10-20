@@ -1,0 +1,32 @@
+:root {
+  --button-bg-color: rgba(149, 64, 228, 0.8);
+  --button-hover-bg-color: rgba(149, 64, 228, 0.7);
+  --button-active-bg-color: rgba(149, 64, 228, 1);
+  --main-txt-color: rgba(0, 0, 0, 1);  
+}
+
+.filter {
+  display: inline-block;
+  background-color: var(--button-bg-color);
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 14px;
+  font-weight: 600;
+}  
+
+.filter:hover {
+  background-color: var(--button-hover-bg-color);
+  cursor: pointer;
+}
+
+.filter:active {
+  background-color: var(--button-active-bg-color);
+}
+
+.filtered-container {
+  padding: 10px 5px;
+}
+
+.filtered-item {
+  margin-bottom: 5px;
+}
